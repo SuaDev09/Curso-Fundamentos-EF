@@ -4,11 +4,11 @@ namespace proyectoef.Models;
 
 public class Categoria
 {
-    [Key]
-    [MaxLength(150)]
+   // [Key]
+    //[MaxLength(150)]
     public Guid CategoriaId { get; set; }
 
-    [Required]
+    //[Required]
     public string Nombre { get; set; }
     
     public string Descripcion { get; set;}
