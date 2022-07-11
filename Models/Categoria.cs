@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace proyectoef.Models;
 
@@ -16,5 +17,6 @@ public class Categoria
     //Fuerza o impacto de la tarea
     public int Peso { get; set;}
     
+    [JsonIgnore]
     public virtual ICollection<Tarea> Tareas { get; set; }
 }
